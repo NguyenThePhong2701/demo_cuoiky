@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_gravity="top"
+            android:id="@+id/tvNameMedicine"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.5"
+            android:background="@drawable/border"
+            android:padding="8dp"
+            android:text="Tên thuốc"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_gravity="top"
+            android:id="@+id/tvNumberMedicine"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:padding="8dp"
+            android:text="Số lượng"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_gravity="top"
+            android:id="@+id/tvTimeMedicine"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3.5"
+            android:background="@drawable/border"
+            android:padding="8dp"
+            android:text="Thời gian"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_gravity="top"
+            android:id="@+id/tvNoticeMedicine"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2.5"
+            android:background="@drawable/border"
+            android:padding="8dp"
+            android:text="Ghi chú"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/item_activity_overall_heath">
+
+    <fragment
+        android:id="@+id/item_activity_overall_heath"
+        android:name="com.example.healthapp.fragment.OverallHealthFragment"
+        android:label="OverallHealthFragment" >
+        <action
+            android:id="@+id/action_item_activity_overall_heath_to_profileDialogFragment"
+            app:destination="@id/profileDialogFragment" />
+        <action
+            android:id="@+id/action_item_activity_overall_heath_to_idMedicalFragment"
+            app:destination="@id/idMedicalFragment" />
+        <action
+            android:id="@+id/action_item_activity_overall_heath_to_medicalRecordFragment"
+            app:destination="@id/medicalRecordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/item_activity_browser"
+        android:name="com.example.healthapp.fragment.BrowserFragment"
+        android:label="fragment_browser"
+        tools:layout="@layout/fragment_browser" >
+        <action
+            android:id="@+id/action_item_activity_browser_to_profileDialogFragment"
+            app:destination="@id/profileDialogFragment" />
+        <action
+            android:id="@+id/action_item_activity_browser_to_medicalRecordFragment"
+            app:destination="@id/medicalRecordFragment" />
+        <action
+            android:id="@+id/action_item_activity_browser_to_timeToTakeMedicineFragment"
+            app:destination="@id/timeToTakeMedicineFragment" />
+        <action
+            android:id="@+id/action_item_activity_browser_to_nameDiseasesFragment"
+            app:destination="@id/nameDiseasesFragment" />
+        <action
+            android:id="@+id/action_item_activity_browser_to_nameMedicineFragment"
+            app:destination="@id/nameMedicineFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/profileDialogFragment"
+        android:name="com.example.healthapp.dialog.ProfileDialogFragment"
+        android:label="ProfileDialogFragment" />
+    <fragment
+        android:id="@+id/idMedicalFragment"
+        android:name="com.example.healthapp.fragment.IdMedicalFragment"
+        android:label="IdMedicalFragment" >
+        <action
+            android:id="@+id/action_idMedicalFragment_to_editIdMedicalFragment"
+            app:destination="@id/editIdMedicalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editIdMedicalFragment"
+        android:name="com.example.healthapp.fragment.EditIdMedicalFragment"
+        android:label="fragment_edit_id_medical2"
+        tools:layout="@layout/fragment_edit_id_medical2" />
+    <fragment
+        android:id="@+id/medicalRecordFragment"
+        android:name="com.example.healthapp.fragment.MedicalRecordFragment"
+        android:label="MedicalRecordFragment" >
+        <action
+            android:id="@+id/action_medicalRecordFragment_to_addRecordMedicalFragment"
+            app:destination="@id/addRecordMedicalFragment" />
+        <action
+            android:id="@+id/action_medicalRecordFragment_to_detailRecordMedical"
+            app:destination="@id/detailRecordMedical" />
+    </fragment>
+    <fragment
+        android:id="@+id/addRecordMedicalFragment"
+        android:name="com.example.healthapp.fragment.AddRecordMedicalFragment"
+        android:label="AddRecordMedicalFragment" />
+    <fragment
+        android:id="@+id/timeToTakeMedicineFragment"
+        android:name="com.example.healthapp.fragment.TimeToTakeMedicineFragment"
+        android:label="TimeToTakeMedicineFragment" >
+        <action
+            android:id="@+id/action_timeToTakeMedicineFragment_to_addTimeToTakeMedicineFragment"
+            app:destination="@id/addTimeToTakeMedicineFragment" />
+        <action
+            android:id="@+id/action_timeToTakeMedicineFragment_to_detailAlarmTimeFragment"
+            app:destination="@id/detailAlarmTimeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addTimeToTakeMedicineFragment"
+        android:name="com.example.healthapp.fragment.AddTimeToTakeMedicineFragment"
+        android:label="AddTimeToTakeMedicineFragment" />
+    <fragment
+        android:id="@+id/detailRecordMedical"
+        android:name="com.example.healthapp.fragment.DetailRecordMedicalFragment"
+        android:label="DetailRecordMedical" />
+    <fragment
+        android:id="@+id/detailAlarmTimeFragment"
+        android:name="com.example.healthapp.fragment.DetailAlarmTimeFragment"
+        android:label="DetailAlarmTimeFragment" />
+    <fragment
+        android:id="@+id/nameDiseasesFragment"
+        android:name="com.example.healthapp.fragment.NameDiseasesFragment"
+        android:label="NameDiseasesFragment" >
+        <action
+            android:id="@+id/action_nameDiseasesFragment_to_addDiseasesFragment"
+            app:destination="@id/listDrugsFromAlphabetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nameMedicineFragment"
+        android:name="com.example.healthapp.fragment.NameMedicineFragment"
+        android:label="NameMedicineFragment" >
+        <action
+            android:id="@+id/action_nameMedicineFragment_to_addMedicineFragment"
+            app:destination="@id/addMedicineFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMedicineFragment"
+        android:name="com.example.healthapp.fragment.ListDrugsFromAlphabetFragment"
+        android:label="ListDrugsFromAlphabetFragment" />
+    <fragment
+        android:id="@+id/listDrugsFromAlphabetFragment"
+        android:name="com.example.healthapp.fragment.ListDrugsFromAlphabetFragment"
+        android:label="AddDiseasesFragment" >
+        <action
+            android:id="@+id/action_addDiseasesFragment_to_listDiseasesFromAlphabetFragment"
+            app:destination="@id/listDiseasesFromAlphabetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listDiseasesFromAlphabetFragment"
+        android:name="com.example.healthapp.fragment.ListDiseasesFromAlphabetFragment"
+        android:label="ListDiseasesFromAlphabetFragment" />
+</navigation>

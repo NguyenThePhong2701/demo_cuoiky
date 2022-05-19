@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9DFDFDF"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5">
+            <TextView
+                android:id="@+id/btnClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:padding="8dp"
+                android:text="Hủy"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="8dp"
+            android:text="Xong"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@drawable/border_bottom"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Tên thuốc"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/btnChooseMedicine"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:background="@drawable/border_bottom"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Tên thuốc"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/numberMedicine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Số lượng thuốc uống mỗi lần"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/timeMedicine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Thời điểm uống"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/noticeMedicine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Chú thích đi kèm" />
+    </LinearLayout>
+</LinearLayout>
